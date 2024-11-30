@@ -47,15 +47,19 @@ The URL has to be something like `https://content-select.com/media/moz_viewer/<u
 python cs_downloader.py https://content-select.com/media/moz_viewer/<uuid>/language:de book.pdf
 ```
 
-**Optional:
+## Optional:
+
 To stay signed in (e.g. to download multiple books)
-***Configure environment variables**
+
+### Configure environment variables
+
 Create a file named '.env' like the '.env.sample'-File in the repository.\
 Set USER_DATA_DIR to your Chromium user data dir and PROFILE_DIR to your profile name (default: Default).
 See `chrome://version/` in Chromium for "Profile Path" and separate the path.\
 (e.g. `/home/<user>/.config/chromium/Default` with `/home/<user>/.config/chromium/` as user data directory and
 `Default` as profile directory)
-***Log in to Content-Select.com**
+### Log in to Content-Select.com
+
 Open your Chromium browser and log in to content-select.com. You need to close the browser afterwards otherwise the script will fail.
 
 
